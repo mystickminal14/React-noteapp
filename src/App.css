@@ -1,38 +1,110 @@
-.App {
-  text-align: center;
+:root {
+  font-size: 62.5%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body,
+html {
+  width: 100%;
+  height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  background:rgb(47, 37, 37);
+}
+.nav{
+  background:rgb(125, 198, 228);
+  padding:0.5em;
+}
+.nav h1{
+  text-align:center;
+  font-family:"boogaloo";
+  font-size:2.4rem;
+  letter-spacing:0.1em;
+}
+.create{
+  display:flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  background:transparent;
+  border:2px solid skyblue;
+  width:400px;
+  flex-direction: column;
+  position:relative;
+  height:150px;
+  gap:1em;
+  padding:0.6em;
+  border-radius:10px;
 }
-
-.App-link {
-  color: #61dafb;
+.contaon{
+  display:flex;
+  width:100vw;
+  justify-content: center;
+  margin-top:80px;
 }
+.create input[type='text'], textarea{
+  width:350px;
+  outline:none;
+resize:none;
+  padding:0.5em;
+  background:transparent;
+border:1px solid transparent;
+  color:skyblue;
+  font-family:'hammersmith one';
+}
+.add{
+  padding:0.6em;
+  outline:none;
+border:1px solid yellow;
+border-radius:50%;
+position:absolute;
+top:120px;
+left:350px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.fa-plus{
+  font-size:2.2rem;
+}
+.memo{
+  width:300px;
+  background:transparent;
+  border:2px solid yellow;
+  margin-top:50px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding:2em;
+  gap:1.5em;
+  flex-direction: column;
+  position:relative;
+
+}
+.memo h1{
+  align-self: flex-start;
+  color:white;
+}
+.memo p{
+  color:skyblue;
+  font-size:1.3rem;
+  justify-content: center;
+}
+.cross{
+  background: transparent;
+  padding:1em;
+  border:1px solid transparent;
+
+}
+.fa-trash{
+  position:absolute;
+  color:white;
+ 
+  right:15px;
 }
